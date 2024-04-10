@@ -67,10 +67,15 @@ function selectOption(optionText) {
 
 function toggleDropdown() {
     var dropdownContent = document.getElementById("dropdown-content");
+    var dropdownButton = document.getElementById("dropdown-button");
+    var arrowIcon = dropdownButton.querySelector('.icon');
+
     if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
         dropdownContent.style.display = "block";
+        arrowIcon.classList.add('rotate'); // Add rotate class to the arrow icon
     } else {
         dropdownContent.style.display = "none";
+        arrowIcon.classList.remove('rotate'); // Remove rotate class from the arrow icon
     }
 }
 // Get current year

@@ -50,7 +50,10 @@ body {
 
 
 
-
+.icon.rotate {
+    transition: transform 0.3s ease;
+    transform: rotate(180deg); /* Rotate the arrow 180 degrees */
+}
 
 
 
@@ -123,12 +126,10 @@ section h2{
     50% { background-color: rgb(209, 209, 209); }
     100% { background-color: inherit; }
 }
-
 #about .content {
     display: flex; /* Use flexbox to align items */
     align-items: flex-start; /* Align items at the start of the flex container */
 }
-
 #about img {
     margin-right: 2%; /* Add some space between the image and the paragraph */
     border-radius: 20px;
